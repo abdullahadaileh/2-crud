@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    use HasFactory;
+
 
     protected $fillable = 
     [
@@ -16,5 +18,8 @@ class Product extends Model
         'product_price',
     ];
 
-    use HasFactory;
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

@@ -2,15 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::resource('products', ProductController::class);
-// soft Delete
-Route::post('/products/{id}/restore', [ProductController::class, 'restore'])->name('products.restore');
 
 
-
-// route::resource('store',ProductController::class);
+Route::resource('categories', CategoryController::class);

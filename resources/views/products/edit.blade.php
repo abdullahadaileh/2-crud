@@ -29,6 +29,7 @@
                 <label for="product_price">Price</label>
                 <input type="number" name="product_price" class="form-control" step="0.01" value="{{ $product->product_price }}" required>
             </div>
+
             <button type="submit" class="btn btn-primary">Update</button>
         </form>
     </div>

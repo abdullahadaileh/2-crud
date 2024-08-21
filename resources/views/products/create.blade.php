@@ -28,6 +28,7 @@
                 <label for="product_price">Price</label>
                 <input type="number" name="product_price" class="form-control" step="0.01" required>
             </div>
+
             <button type="submit" class="btn btn-primary">Create</button>
         </form>
     </div>
